@@ -6,6 +6,7 @@ int largest_mountain(vector<int> v){
     int largest = 0 ;
 
     for(int i=1;i<=n-2;){
+
         if(v[i]>v[i-1] and v[i]>v[i+1]){//it checks peak point
             int ct = 1 ;
             int j = i ;
@@ -14,12 +15,15 @@ int largest_mountain(vector<int> v){
                 j-- ;
                 ct++ ;
             }
+
             while(i<=n-2 and v[i]>v[i+1]){
                 // it counts forward elements
                 i++ ; ct++ ;
             }
+
             largest = max(largest,ct) ;// if count is greater than previous then it update 
-        }else{
+        }
+        else{
             i++ ;
         }
     }
