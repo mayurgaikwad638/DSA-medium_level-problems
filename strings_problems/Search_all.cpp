@@ -14,7 +14,7 @@ vector<int> stringSearch(string bigs,string s){
         }
     }
 
-    return result ;
+    return result;
 }
 int main()
 {
