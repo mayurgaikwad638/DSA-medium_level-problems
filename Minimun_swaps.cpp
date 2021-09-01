@@ -15,7 +15,7 @@ int minimum_swaps(vector<int> v ){
 
     sort(ap,ap+n) ;
 
-    vector<bool> visited(n,false) ;
+    vector<bool> visited(n,false)    ;
 
     for(int i=0;i<n;i++){
         int old_pos = ap[i].second ;
