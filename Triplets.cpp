@@ -4,7 +4,7 @@
 using namespace std ;
 vector<vector<int>> triplets(vector<int> v,int sum){
     vector<vector<int>> result ;
-    sort(v.begin(),v.end()) ;
+    sort(v.begin(),v.end()) ;// O(NlogN) + O(N^2) = O(N^2)
 
     for(int i=0;i<v.size()-2;i++){
         int j = i + 1;
@@ -28,6 +28,8 @@ vector<vector<int>> triplets(vector<int> v,int sum){
 } 
 int main()
 {
+   // first sort given vector 
+   // two pointer approach
    //int n ; cin >> n ;
   vector<int> v{-1,0,1,2,-1,-4} ;
     int sum = 0 ;;

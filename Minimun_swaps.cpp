@@ -8,7 +8,7 @@ int minimum_swaps(vector<int> v ){
 
     for(int i=0;i<n;i++){
 
-        ap[i].first = v[i] ;
+        ap[i].first = v[i] ;   // pair stores element with its index 
         ap[i].second = i ;
 
     }
@@ -40,6 +40,7 @@ int minimum_swaps(vector<int> v ){
 }
 int main()
 {
+    //  somthing like cyclic sort
     int n ; cin >> n ;
     vector<int> v(n) ;
     for(int i=0;i<n;i++) cin >> v[i] ;
